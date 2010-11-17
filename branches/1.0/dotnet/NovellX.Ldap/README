@@ -1,0 +1,8 @@
+﻿This is a .NET wrapper/bindings for the Novell NMAS Library for C and Novell LDAP Library for C that should be usable from any .NET language.
+Both a low-level set of P/Invoke methods are imported (See the various "NativeMethods" classes & files) as well as higher-level abstraction API are provided (See all classes besides the NativeMethods classes in NovellX.Ldap and NovellX.Security.Nmas namespaces).
+
+Dependencies:
+- Novell's LDAP Library for C: ftp://sdk.provo.novell.com/ndk/cldap/builds/netware_windows/  - Was built with novell-cldap-devel-2009.10.06-1netware_windows.zip
+- Novell's NMAS C Library: ftp://sdk.provo.novell.com/ndk/nmas/builds/cross_platform/ - Was build with novell-nmas-devel-2009.11.11-cross_platform.zip
+
+In general the easiest thing to do is to copy the dependencies into the same directory as the executable using the library. Then Windows should find the lib and load it.
